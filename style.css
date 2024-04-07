@@ -52,10 +52,7 @@ nav ul li{
     padding: 5px 15px;
     font-size: 24px;
     cursor: pointer;
-<<<<<<< HEAD
     border: 1px solid transparent;
-=======
->>>>>>> 2c7fb42f557fd8be22a22a1372ee77016a9d1818
 }
 nav ul li:hover{
     border: 1px solid white;
