@@ -15,7 +15,7 @@ body{
     font-size: 18px;
     background-image: url(./image/fond1.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size:cover;
     color: #fff;
 }
@@ -162,6 +162,13 @@ nav ul li:hover{
 
 
 @media screen and (max-width:1023px) and (min-width:768px){
+    body{
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
     nav{
         position: fixed;
         left: 0;
@@ -190,8 +197,15 @@ nav ul li:hover{
         list-style: none;
     }
     nav ul li{
-        padding: 60px 0;
+        margin: 35px 0;
+        padding: 5px 15px;
         font-size: 20px;
+        cursor: pointer;
+    }
+    nav ul li:hover{
+        border: 1px solid white;
+        border-radius: 25px;
+        height: fit-content;
     }
     #container{
         width: 80%;
@@ -207,12 +221,15 @@ nav ul li:hover{
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 468px;
-        max-height: 500px;
+        height: fit-content;
+        padding: 25px;
     }
     #intro div{
         width: 80%;
         height: auto;
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 25px;
+        border-radius: 25px;
     }
     #intro h1{
         width: 100%;
@@ -223,15 +240,17 @@ nav ul li:hover{
         justify-content: center;
         align-items: center;
         width: 100%;
-        min-height: auto;
-        height: 468px;
+        height:fit-content;
+        padding: 25px;
         border-top: 1px solid #fff;
         border-bottom: 1px solid #fff;
     }
     #propos div{
         width: 80%;
         height: auto;
-        
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 25px;
+        border-radius: 25px;      
     }
     #propos h1{
         width: 100%;
@@ -265,7 +284,7 @@ nav ul li:hover{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         width: 80%;
         height: 100px;
         bottom: 0;
