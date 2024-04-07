@@ -284,7 +284,7 @@ nav ul li:hover{
         width: 100%;
         background-position: center;
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: repeat-y;
     }
     nav{
         position: absolute;
@@ -327,6 +327,7 @@ nav ul li:hover{
         justify-content: center;
         text-align: center;
     }
+    
     #intro{
         display: flex;
         justify-content: center;
@@ -370,7 +371,7 @@ nav ul li:hover{
         /* flex-wrap: nowrap; */
         flex-direction: row;
         width: 90%;
-        height:min-content;
+        height:200px;
         overflow-x: auto;
     }
     #competence .comp{
@@ -388,19 +389,24 @@ nav ul li:hover{
         height: 75px;
     }
     #contact{
+        border-top: 1px solid #fff;
         font-size: 14px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        width: 80%;
-        height:min-content;
+        width: 100%;
+        height:150px;
     }
     #contact #citation{
         font-style: italic;
+        margin: 20px;
     }
     #contact #citation span{
         font-size: 10px;
         
+    }
+    #contact #info {
+        margin-bottom: 20px;
     }
 }
