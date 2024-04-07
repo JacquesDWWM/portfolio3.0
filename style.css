@@ -30,7 +30,7 @@ nav{
     justify-content: center;
     text-align: center;
     overflow-y: hidden;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 nav #logo{
     top: 0;
@@ -82,7 +82,7 @@ nav ul li:hover{
     text-align: right;
     padding: 25px;
     border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 #intro h1{
     width: 100%;
@@ -106,7 +106,7 @@ nav ul li:hover{
     text-align: left;
     padding: 25px;
     border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 #propos h1{
     width: 100%;
@@ -129,7 +129,7 @@ nav ul li:hover{
     margin: 0 40px;
     min-width: 175px;
     height: 175px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(0, 0, 0, 0.1);
     border-radius: 25px;
 }
 #competence .comp img{
@@ -180,7 +180,7 @@ nav ul li:hover{
         justify-content: center;
         text-align: center;
         overflow-y: auto;
-        background-color: rgba(255, 255, 255, 0.05);
+        background-color: rgba(0, 0, 0, 0.1);
     }
     nav #logo{
         top: 0;
@@ -229,7 +229,7 @@ nav ul li:hover{
     #intro div{
         width: 80%;
         height: auto;
-        background-color: rgba(255, 255, 255, 0.05);
+        background-color: rgba(0, 0, 0, 0.1);
         padding: 25px;
         border-radius: 25px;
     }
@@ -250,7 +250,7 @@ nav ul li:hover{
     #propos div{
         width: 80%;
         height: auto;
-        background-color: rgba(255, 255, 255, 0.05);
+        background-color: rgba(0, 0, 0, 0.1);
         padding: 25px;
         border-radius: 25px;      
     }
@@ -274,7 +274,7 @@ nav ul li:hover{
         margin: 0 20px;
         min-width: 150px;
         height: 150px;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(0, 0, 0, 0.1);
         border-radius: 25px;
     }
     #competence .comp img{
@@ -317,7 +317,7 @@ nav ul li:hover{
         justify-content: center;
         text-align: center;
         overflow-y: auto;
-        background-color: rgba(255, 255, 255, 0.05);
+        background-color: rgba(0, 0, 0, 0.1);
     }
     nav #logo{
         top: 0;
@@ -402,7 +402,7 @@ nav ul li:hover{
         margin: 0 10px;
         min-width: 125px;
         height: 125px;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(0, 0, 0, 0.1);
         border-radius: 25px;
     }
     #competence .comp img{
