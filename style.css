@@ -15,46 +15,55 @@ body{
     font-size: 18px;
     background-image: url(./image/fond1.jpg);
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat-y;
+    background-size:cover;
     color: #fff;
 }
 @media screen and (min-width:1024px){
 nav{
     position: fixed;
     left: 0;
-    width: 300px;
+    width: 15%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    overflow-y: auto;
+    overflow-y: hidden;
     background-color: rgba(255, 255, 255, 0.05);
 }
 nav #logo{
     top: 0;
     width: 100%;
     height: 300px;
-    margin: 0 auto;
+    margin: 20px auto 50px auto;
 }
 nav #logo img{
-    margin-top: 50px;
-    height: 250px;
+    margin: 50px;
+    height: 200px;
 }
 nav ul{
     width: auto;
-    height: auto;
+    height: 100%;
     list-style: none;
 }
 nav ul li{
-    padding: 60px 0;
+    margin: 35px 0;
+    padding: 5px 15px;
     font-size: 24px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+nav ul li:hover{
+    border: 1px solid white;
+    border-radius: 25px;
+    height: fit-content;
 }
 #container{
     width: 85%;
-    height: 100%;
+    height: 90vh;
     margin-left: 15%;
+    padding: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -63,9 +72,9 @@ nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 468px;
-    max-height: 500px;
+    width: 90%;
+    height: fit-content;
+    padding: 25px;
 }
 #intro div{
     width: 80%;
@@ -81,11 +90,13 @@ nav ul li{
     padding: 0 0 50px 0;
 }
 #propos{
+    width: 90%;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 468px;
+    padding: 25px;
+    /* margin: 40px auto; */
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
@@ -109,27 +120,27 @@ nav ul li{
     flex-direction: row;
     width: 90%;
     height: 250px;
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 #competence .comp{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 40px;
-    min-width: 200px;
-    height: 200px;
+    min-width: 175px;
+    height: 175px;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 25px;
 }
 #competence .comp img{
-    min-width: 150px;
-    height: 150px;
-    width: 150px;
+    min-width: 125px;
+    height: 125px;
+    width: 125px;
 }
 #competence .comp img:hover{
-    min-width: 165px;
-    height: 165px;
-    width: 165px;
+    min-width: 140px;
+    height: 140px;
+    width: 140px;
 }
 #contact{
     display: flex;
@@ -137,13 +148,28 @@ nav ul li{
     align-items: center;
     flex-wrap: nowrap;
     width: 100%;
-    height: 100px;
+    height: 75px;
     bottom: 0;
-}}
+}
+#contact #citation{
+    font-style: italic;
+}
+#contact #citation span{
+    font-size: 10px;
+    
+}
+}
 
 
 
 @media screen and (max-width:1023px) and (min-width:768px){
+    body{
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
     nav{
         position: fixed;
         left: 0;
@@ -172,8 +198,15 @@ nav ul li{
         list-style: none;
     }
     nav ul li{
-        padding: 60px 0;
+        margin: 35px 0;
+        padding: 5px 15px;
         font-size: 20px;
+        cursor: pointer;
+    }
+    nav ul li:hover{
+        border: 1px solid white;
+        border-radius: 25px;
+        height: fit-content;
     }
     #container{
         width: 80%;
@@ -189,12 +222,15 @@ nav ul li{
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 468px;
-        max-height: 500px;
+        height: fit-content;
+        padding: 25px;
     }
     #intro div{
         width: 80%;
         height: auto;
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 25px;
+        border-radius: 25px;
     }
     #intro h1{
         width: 100%;
@@ -205,15 +241,17 @@ nav ul li{
         justify-content: center;
         align-items: center;
         width: 100%;
-        min-height: auto;
-        height: 468px;
+        height:fit-content;
+        padding: 25px;
         border-top: 1px solid #fff;
         border-bottom: 1px solid #fff;
     }
     #propos div{
         width: 80%;
         height: auto;
-        
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 25px;
+        border-radius: 25px;      
     }
     #propos h1{
         width: 100%;
@@ -247,18 +285,26 @@ nav ul li{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         width: 80%;
         height: 100px;
         bottom: 0;
-}}
+}
+#contact #citation{
+    font-style: italic;
+}
+#contact #citation span{
+    font-size: 10px;
+    
+}
+}
 @media screen and (max-width: 767px){
     body{
         height: 100vh;
         width: 100%;
         background-position: center;
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: repeat-y;
     }
     nav{
         position: absolute;
@@ -301,6 +347,7 @@ nav ul li{
         justify-content: center;
         text-align: center;
     }
+    
     #intro{
         display: flex;
         justify-content: center;
@@ -344,7 +391,7 @@ nav ul li{
         /* flex-wrap: nowrap; */
         flex-direction: row;
         width: 90%;
-        height:min-content;
+        height:200px;
         overflow-x: auto;
     }
     #competence .comp{
@@ -362,12 +409,24 @@ nav ul li{
         height: 75px;
     }
     #contact{
+        border-top: 1px solid #fff;
         font-size: 14px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        width: 80%;
-        height:min-content;
+        width: 100%;
+        height:150px;
+    }
+    #contact #citation{
+        font-style: italic;
+        margin: 20px;
+    }
+    #contact #citation span{
+        font-size: 10px;
+        
+    }
+    #contact #info {
+        margin-bottom: 20px;
     }
 }
