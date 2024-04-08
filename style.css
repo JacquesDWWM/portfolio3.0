@@ -47,19 +47,25 @@ nav #logo img{
 nav ul{
     width: auto;
     height: 100%;
-    list-style: none;}
+    list-style: none;
+}
+    
 nav ul li{
     margin: 35px 0;
     padding: 5px 15px;
     border: 1px solid transparent;
     font-size: 24px;
-    cursor: pointer;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 nav ul li:hover{
     border: 1px solid white;
     border-radius: 25px;
     height: fit-content;
+    cursor: pointer;
+}
+nav ul li input{
+    display: none;
 }
 #container{
     width: 85%;
