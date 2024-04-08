@@ -31,6 +31,8 @@ nav{
     text-align: center;
     overflow-y: hidden;
     background-color: rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+
 }
 nav #logo{
     top: 0;
@@ -45,14 +47,14 @@ nav #logo img{
 nav ul{
     width: auto;
     height: 100%;
-    list-style: none;
-}
+    list-style: none;}
 nav ul li{
     margin: 35px 0;
     padding: 5px 15px;
     border: 1px solid transparent;
     font-size: 24px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 nav ul li:hover{
     border: 1px solid white;
@@ -136,6 +138,7 @@ nav ul li:hover{
     min-width: 125px;
     height: 125px;
     width: 125px;
+    transition: all 0.3s ease;
 }
 #competence .comp img:hover{
     min-width: 140px;
@@ -196,6 +199,7 @@ nav ul li:hover{
         width: auto;
         height: auto;
         list-style: none;
+        overflow-x: hidden;
     }
     nav ul li{
         margin: 35px 0;
@@ -203,6 +207,7 @@ nav ul li:hover{
         font-size: 20px;
         cursor: pointer;
         border: 1px solid transparent;
+        transition: all 0.3s ease;
     }
     nav ul li:hover{
         border: 1px solid white;
